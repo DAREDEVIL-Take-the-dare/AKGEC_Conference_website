@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKGEC Conference 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+  <div class="container-fluid">
+    <header class="header-section text-white text-center d-flex align-items-center justify-content-center "style="margin-bottom: 10px; border-radius:15px 15px 0 0" >
+      <div class="container ">
+          <h1 class="display-4 fw-bold fade-in">International Conference on</h1>
+          <h1 class="display-3 fw-bold fade-in">Relevance of Applied Sciences to Emerging Technology</h1>
+          <h2 class="display-5 mt-3 text-warning fade-in-slow">ROASET-II 2025</h2>
+          <p class="lead mt-2 fade-in-slow">
+              <i class="fa-solid fa-calendar-days text-warning"></i> June 29-30, 2025 &nbsp; | &nbsp; 
+              <i class="fa-solid fa-location-dot text-danger"></i> AKGEC, Ghaziabad
+          </p>
+      </div>
+  </header>
+
+    <nav class="navbar navbar-expand-lg " style="height: 80px;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#" style="height: 100%;">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" style="height: 50px; width: auto;">
+                <span class="ms-3 ">AKGEC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="{{ url_for('about') }}">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#contact">Call for Paper</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#contact">Registration</a></li>
+
+                    <li class="nav-item"><a class="nav-link " href="{{ url_for('committee') }}">Committee</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="conferenceCarousel" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+              <img src="{{ url_for('static', filename='images/image1.png') }}" class="d-block w-100 carousel-img" alt="Conference Image 1">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+              <img src="{{ url_for('static', filename='images/image2.png') }}" class="d-block w-100 carousel-img" alt="Conference Image 2">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+              <img src="{{ url_for('static', filename='images/image3.png') }}" class="d-block w-100 carousel-img" alt="Conference Image 3">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#conferenceCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#conferenceCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  
+      
+  <section id="about" class="py-5 text-center" style="background: #f8f9fa;">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- About Text Section -->
+            <div class="col-md-6 fade-in-left">
+                <h2 class="text-primary">About the Conference</h2>
+                <p class="lead text-muted">
+                    The objective of the conference is to exchange new knowledge and recent developments in computational techniques, mathematical modelling, energy systems, and more.
+                    It aims to provide a platform for engineers, researchers, and specialists from academia, research centres, and industry worldwide to explore the scope of applied sciences in emerging technology and computational intelligence for sustainable solutions.
+                </p>
+                <p class="text-muted">
+                    The International Conference on Relevance of Applied Sciences to Emerging Technology (ROASET-II) is organized by the Department of Applied Sciences & Humanities, Ajay Kumar Garg Engineering College, Ghaziabad (UP), affiliated with Dr. APJ Abdul Kalam Technical University, Lucknow, India.
+                </p>
+                <p class="text-muted">
+                    This event offers a chance for young researchers to interact with eminent scientists and global researchers while discussing interdisciplinary topics like mathematics, statistics, computational intelligence, and renewable energy.
+                </p>
+            </div>
+
+            <!-- Important Timeline Section -->
+            <div class="col-md-6 fade-in-right">
+                <div class="card border-0 shadow-lg p-4">
+                    <h3 class="text-primary text-center mb-3">Important Dates</h3>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td><strong>Invitation for Papers</strong></td>
+                                <td>15th March 2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Submission of Paper</strong></td>
+                                <td>1st April 2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notification to Authors</strong></td>
+                                <td>10th April 2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Final Version of Accepted Submissions</strong></td>
+                                <td>1st May 2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Registration and Camera-Ready Copy Submission</strong></td>
+                                <td>20th May 2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Conference Date</strong></td>
+                                <td>29-30th June 2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- date and venue -->
+<section id="date-venue" class="py-5 text-center" style="background: #f8f9fa;">
+  <div class="container">
+      <h2 class="text-primary mb-4">Date & Venue</h2>
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="card border-0 shadow-lg p-4">
+                  <h4 class="text-dark">Conference Date</h4>
+                  <p class="lead text-muted">June 29-30, 2025</p>
+                  <hr >
+                  <h4 class="text-dark">Conference Venue</h4>
+                  <p class="lead text-muted">Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, Uttar Pradesh, India</p>
+                  <hr>
+                  <h4 class="text-dark">Organized By</h4>
+                  <p class="lead text-muted">Department of Applied Sciences & Humanities
+                    Ajay Kumar Garg Engineering College, Ghaziabad (UP)
+                    Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, (UP), College Code-027
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- conference topics  -->
+<section id="conference-theme" class="py-5 text-center" style="background: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-primary mb-4 ">Conference Theme</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card border-0 shadow-lg p-4 text-start">
+                    <p class="lead text-muted">
+                        The International Conference on Relevance of Applied Sciences to Emerging Technology (ROASET-II) aims to provide a common platform for researchers, academicians, industry partners, and users to discuss the relevance of applied sciences in emerging technology.
+                    </p>
+                    <h4 class="text-dark fw-bold">Conference Topics</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush text-muted">
+                                <li class="list-group-item"><span class="text-primary fw-bold">&#8226;</span> Mathematical Modelling and Simulation</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Approximation Theory</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Operation Research & Management Science</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Application of Fuzzy Logic & Probability</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> High Speed Computational (HPC)</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Software Testing and Reliability</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Material Science</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Neural Network & Genetic Algorithm</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Reliability Theory</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Inventory Management</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Data Mining & Data Analysis</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Decision Science</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush text-muted">
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Nuclear Science</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Cryptography & Security System</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Numerical & Statistical Analysis</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Big Data Analytics</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Machine Learning</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Nano Science</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Photonics</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Waste Management & Energy Production</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Liquid Crystal</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Water Treatment & Reuse</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> Astronomy and Astrophysics</li>
+                                <li class="list-group-item"><span class="text-primary">&#8226;</span> New Challenges and Solutions in Renewable Energy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4 class="text-dark mt-4 fw-bold">Conference Tracks</h4>
+                    <ul class="list-group list-group-flush text-muted">
+                        <li class="list-group-item"><span class="text-primary fw-bold">Track 1:</span> Scope of Applied Mathematics in Emerging Technology</li>
+                        <li class="list-group-item"><span class="text-primary fw-bold">Track 2:</span> Relevance of Applied Chemistry in Engineering</li>
+                        <li class="list-group-item"><span class="text-primary fw-bold">Track 3:</span> Recent Trends and Scope of Physics in Engineering & Technology</li>
+                        <li class="list-group-item"><span class="text-primary fw-bold">Track 4:</span> Artificial Intelligence and Embedded Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- commette members -->
+<section id="committee" class="py-5 text-center" style="background: #f8f9fa;">
+  <div class="container ">
+      <h2 class="text-primary mb-4">Meet Our Committee Members</h2>
+      <div class="row justify-content-center"> 
+          <!-- Member 1 -->
+          <div class="col-md-4 fade-in-up">
+              <div class="card border-0 shadow-lg">
+                  <img src="{{ url_for('static', filename='images/member1.png') }}" class="card-img-top rounded-circle member-img" alt="Member 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Dr. R.K. Agarwal</h5>
+                      <h6 >Director General, AKGEC</h6>
+                      <p class="card-text text-muted">Chair Person/ Chief Patron</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 fade-in-up">
+            <div class="card border-0 shadow-lg">
+                <img src="{{ url_for('static', filename='images/member1.png') }}" class="card-img-top rounded-circle member-img" alt="Member 1">
+                <div class="card-body">
+                    <h5 class="card-title">Dr. R.K. Agarwal</h5>
+                    <h6 >Director General, AKGEC</h6>
+                    <p class="card-text text-muted">Chair Person/ Chief Patron</p>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- logos  -->
+<!-- Logos Section with Background Image -->
+<!-- Logos Section with Background Image -->
+<section class="logos-section ">
+  <div class="row text-center">
+      <div class="col-6 col-md-3">
+          <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo 1" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+          <img src="{{ url_for('static', filename='images/logo2.png') }}" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+          <img src="{{ url_for('static', filename='images/logo3.png') }}" alt="Logo 3" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3">
+          <img src="{{ url_for('static', filename='images/logo4.png') }}" alt="Logo 4" class="img-fluid">
+      </div>
+  </div>
+</section>
+
+<style>
+    .logos-section {
+        background-image: url(#); /* Replace with your background image */
+        background-size: cover;
+        background-position: center;
+        padding: 40px 0; /* Adjust padding as needed */
+        border-radius: 8px; /* Optional: add rounded corners */
+    }
+
+    .logos-section .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos-section img {
+        max-width: 100%; /* Make the images responsive */
+        height: auto;    /* Maintain aspect ratio */
+    }
+</style>
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Your Website Name</p>
+</footer>
+
+
+ 
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 AKGEC Conference. All Rights Reserved.</p>
+    </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About AKGEC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg " style="height: 80px;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#" style="height: 100%;">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" style="height: 50px; width: auto;">
+                <span class="ms-3 ">AKGEC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="{{ url_for('about') }}">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="{{ url_for('committee') }}">Committee</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center" style="background: #f8f9fa;">
+        <div class="container ">
+            <h2 class="text-primary mb-4">About AKGEC</h2>
+            <p class="lead text-muted">Scaling the Zenith of Excellence, Ajay Kumar Garg Engineering College (AKGEC) has established itself as one of the leading technical institutions in Uttar Pradesh.</p>
+            <div class="row align-items-center">
+                <!-- Left side: Image -->
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/akgec-image.png') }}" class="img-fluid rounded" alt="AKGEC Campus" style="max-height: 400px; object-fit: cover;">
+                </div>
+                <!-- Right side: Description -->
+                <div class="col-md-6 justify-text ">
+                    <p>Established in 1998, Ajay Kumar Garg Engineering College (AKGEC) is affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow. The college is renowned for offering high-quality B.Tech and M.Tech programs in various engineering disciplines, including Computer Science, Electronics, Mechanical, and Civil Engineering.</p>
+                    <p>AKGEC has been consistently recognized for its academic excellence, boasting top-notch university rankings and industry placements. With an emphasis on research and development, the college has set up specialized centers of competence and collaboration with leading global companies, such as BOSCH Rexroth AG and SIEMENS.</p>
+                    <p>The college prides itself on its industry-oriented education, promoting a blend of theoretical learning and hands-on training to equip students with the skills required to succeed in the ever-evolving technological landscape.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Centers of Excellence -->
+    <section id="centers" class="py-5" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-primary mb-4 text-center">Centers of Excellence</h2>
+            <p class="lead text-muted text-center mb-4">AKGEC has established industry-relevant centers to bridge the gap between academics and industrial requirements.</p>
+            <div class="row d-flex justify-content-between">
+                <!-- Left Column -->
+                <div class="col-md-6 d-flex mb-4">
+                    <div class="card w-100 border-primary shadow-sm h-100">
+                        <div class="card-body d-flex flex-column justify-text">
+                            <h5 class="card-title text-primary">Automation Technologies</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Centre of Competence in Automation Technologies</strong> (BOSCH Rexroth AG, Germany)</li>
+                                <li><strong>PLM Centre of Excellence</strong> (SIEMENS)</li>
+                                <li><strong>Centre for Integrated Automation</strong> (Automation Industry Association - AIA)</li>
+                                <li><strong>Industrial Pneumatic Knowledge Centre</strong> (Janatics, Coimbatore)</li>
+                                <li><strong>Advanced Welding Technology and Research Centre</strong> (Fronius International GmbH)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Column -->
+                <div class="col-md-6 d-flex mb-4">
+                    <div class="card w-100 border-primary shadow-sm h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">Manufacturing & Research</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Advance Manufacturing Centre</strong> (AKGEC-SIEMENS)</li>
+                                <li><strong>Fab Lab</strong> (MIT Initiative, USA)</li>
+                                <li><strong>Big Data Centre of Excellence</strong></li>
+                                <li><strong>Software Development Centre</strong></li>
+                                <li><strong>Open-Source Software Research & Development Lab</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="conference" class="py-5 text-center" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-primary mb-4">AKGEC Conference</h2>
+            <p class="lead text-muted mb-4">The objective of the conference is to exchange new knowledge and recent developments in computational techniques, mathematical modelling, energy systems, and more. It aims to provide a forum for engineers, researchers, and specialists worldwide to discuss applied sciences in emerging technology and computational intelligence for sustainable technologies.</p>
+            
+            <p class="text-muted mb-4">The International Conference on Relevance of Applied Sciences to Emerging Technology (ROASET-II) is organized by the Department of Applied Sciences & Humanities, Ajay Kumar Garg Engineering College, Ghaziabad (UP), affiliated with Dr. APJ Abdul Kalam Technical University, Lucknow (UP), India.</p>
+            
+            <p class="text-muted mb-4">The conference will provide an opportunity for researchers, academicians, and students to share their knowledge and discuss the latest developments in their field of expertise. This platform enables young researchers to interact with eminent scientists and researchers globally. Equal opportunities are provided for all participants to share their ideas in interdisciplinary fields such as mathematics, statistics, computational intelligence, and renewable energy.</p>
+        </div>
+    </section>
+    
+
+    <section id="department" class="py-5" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-primary mb-4 text-center">About the Department</h2>
+            <p class="lead text-muted text-center mb-4">Empowering Students through Excellence in Applied Sciences</p>
+    
+            <div class="row ">
+                <!-- Text Column (Left) -->
+                <div class="col-md-7 d-flex flex-column justify-content-between justify-text">
+                    <div>
+                        <p>The Department of Applied Sciences at AKGEC is dedicated to equipping students with a strong foundation in Applied Sciences. The department plays a vital role in fostering holistic education by not only preparing students to become competent professionals but also helping them develop human values that shape them into responsible citizens and future leaders.</p>
+                        <p>AKGEC is committed to creating a well-rounded educational experience, with a focus on imparting both theoretical and practical knowledge. The department offers a unique blend of courses that provide students with a comprehensive perspective of the evolving fields of Applied Sciences.</p>
+                        
+                        <h5 class="text-primary mt-4">Academic Focus & Facilities</h5>
+                        <p>The department offers core courses in Humanities, Applied Mathematics, Applied Physics, and Applied Chemistry, designed to provide a strong theoretical and practical foundation for students.</p>
+                        <p>With the latest curriculum updates, the department is equipped with well-qualified faculty members who continuously enhance the learning experience. State-of-the-art laboratories with the latest equipment ensure that students gain hands-on experience, bridging the gap between academia and industry.</p>
+                        <p>The department fosters an environment of continuous learning, offering seminars, guest lectures, industry interactions, soft skills training, technical workshops, and various co-curricular and extracurricular activities.</p>
+                        
+                        <p class="lead text-muted text-center mt-4">Our department is committed to providing an enriching academic and research environment to nurture the leaders of tomorrow.</p>
+                    </div>
+                </div>
+    
+                <!-- Image Column (Right) -->
+                <div class="col-md-5 d-flex ">
+                    <img src="{{ url_for('static', filename='images/dept.png') }}" alt="Department Image" class="img-fluid " style="max-height: 400px; border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about-ghaziabad" class="py-5" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-primary mb-4 text-center">About Ghaziabad</h2>
+            
+            <div class="card mb-4" style="border: none; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="{{ url_for('static', filename='images/gzb.png') }}" class="img-fluid rounded-start" alt="Ghaziabad Image" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghaziabad City Overview</h5>
+                            <p class="card-text">
+                                Ghaziabad is a city in the Indian state of Uttar Pradesh and a part of the NCR. It is the administrative headquarters of Ghaziabad district and the largest city in western Uttar Pradesh, with a population of 1,729,000. Well connected by roads and railways, it is a major rail junction for North India. Known as the "Saya of Uttar Pradesh" due to its proximity to New Delhi, it is one of the fastest-growing cities in the world.
+                            </p>
+                            <p class="card-text">
+                                The city was founded in 1740 A.D. by Ghazi-ud-Din, and named "Ghaziuddinnagar." It became known as "Ghaziabad" with the opening of the Railways in 1864. The city has two major divisions separated by the Hindon River: Trans-Hindon and Cis-Hindon. Ghaziabad played a significant role during the Mughal period and became a key railway junction for the region.
+                            </p>
+                            <p class="card-text">
+                                Ghaziabad’s development saw a significant milestone with the establishment of the Scientific Society and the opening of the Sind, Punjab & Delhi Railway line. This development made the city a major rail junction, connecting Delhi and Multan through Ghaziabad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about-uttar-pradesh" class="py-5" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-primary mb-4 text-center">About Uttar Pradesh</h2>
+            
+            <!-- Single Card: Content on the left, Image on the right -->
+            <div class="card mb-4" style="border: none; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Uttar Pradesh Overview</h5>
+                            <p class="card-text">
+                                Uttar Pradesh ('Northern Province') is the most populous state in India, with over 200 million inhabitants. It was created in 1937 as the United Provinces of Agra and Oudh during British rule and renamed to Uttar Pradesh in 1950. It is bordered by Rajasthan, Haryana, Himachal Pradesh, Delhi, Uttarakhand, Nepal, Bihar, Madhya Pradesh, Jharkhand, and Chhattisgarh.
+                            </p>
+                            <p class="card-text">
+                                The state is divided into 18 divisions and 75 districts, with the state capital being Lucknow. The major rivers of the state, the Ganges and Yamuna, join at Triveni Sangam in Prayagraj. The state is also known for its agricultural output, with 82% of its area being cultivable.
+                            </p>
+                            <h5 class="card-title mt-4">Economy and Tourism</h5>
+                            <p class="card-text">
+                                Uttar Pradesh has a growing economy dominated by the services industry, including tourism, real estate, and financial consultancies. It is the second-largest state economy in India, with a GDP of ₹21.73 lakh crore (US$290 billion).
+                            </p>
+                            <p class="card-text">
+                                Uttar Pradesh ranks first in domestic tourist arrivals in India, with over 71 million visitors. The state is home to three UNESCO World Heritage Sites: the Taj Mahal, Agra Fort, and Fatehpur Sikri. Its tourism sector is growing at 21.60% annually.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{{ url_for('static', filename='images/upimage.png') }}" class="img-fluid rounded-end" alt="Uttar Pradesh Image" style="height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 AKGEC. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
